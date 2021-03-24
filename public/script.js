@@ -15,8 +15,6 @@ const _navListItems = document.querySelectorAll(
   "#nav-container .nav-ul-container ul li"
 );
 
-const _wind_img_img = document.querySelector(".wind-img img");
-
 //remove transition at the end of transition
 // !prevents navList hopping on window resize
 _navList.addEventListener("transitionend", () => {
@@ -63,16 +61,75 @@ _navBurger.addEventListener("click", () => {
   });
 });
 
+const _animTime = 1;
+
 new AddStyleOnScroll(
   ".wind-img img",
-  "animation: fade-in-slide-up-right 1.7s;"
+  `animation: fade-in-slide-up-right ${_animTime}s;`
 );
-new AddStyleOnScroll(".wind-2", "animation: fade-in-slide-up-left 1.7s;");
-new AddStyleOnScroll(".wind-1", "animation: fade-in-slide-up 1.7s;");
-// document.addEventListener("scroll", () => {
-//   const animStart =
-//     _wind_img_img.offsetTop - _wind_img_img.scrollHeight + window.innerHeight;
-//   console.log(animStart, window.scrollY);
-//   if (animStart <= window.scrollY)
-//     _wind_img_img.style = "animation: fade-in-slide-up-right 2s;";
-// });
+new AddStyleOnScroll(
+  ".wind-2",
+  `animation: fade-in-slide-up-left ${_animTime}s;`
+);
+new AddStyleOnScroll(".wind-1", `animation: fade-in-slide-up ${_animTime}s;`);
+new AddStyleOnScroll(
+  ".whyus-text",
+  `animation: fade-in-slide-up ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".whyus-card-1",
+  `animation: fade-in-slide-up-right ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".whyus-card-2",
+  `animation: fade-in-slide-up ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".whyus-card-3",
+  `animation: fade-in-slide-up-left ${_animTime}s;`
+);
+
+new AddStyleOnScroll(
+  ".service-card-1",
+  `animation: fade-in-slide-up-right ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".service-card-2",
+  `animation: fade-in-slide-up ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".service-card-3",
+  `animation: fade-in-slide-up-left ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".service-card-4",
+  `animation: fade-in-slide-up-right ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".service-card-5",
+  `animation: fade-in-slide-up ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".service-card-6",
+  `animation: fade-in-slide-up-left ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".contact-label",
+  `animation: fade-in-slide-up ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".contact-info-container",
+  `animation: fade-in-slide-up-right ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".bi-facebook",
+  `animation: fade-in-slide-up-right ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".bi-twitter",
+  `animation: fade-in-slide-up ${_animTime}s;`
+);
+new AddStyleOnScroll(
+  ".bi-youtube",
+  `animation: fade-in-slide-up-left ${_animTime}s;`
+);

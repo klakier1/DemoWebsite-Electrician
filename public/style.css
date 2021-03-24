@@ -292,6 +292,7 @@ form input[type="submit"] {
   color: white;
   padding: 0.6rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 form input[type="submit"]:focus {
@@ -407,6 +408,7 @@ form input[type="submit"]:focus {
   margin: 1rem auto 3rem auto;
   border: none;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .offer-card-1,
