@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="theme-color" content="rgb(240, 248, 255)" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/196d948b10.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <script defer src="map.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdv8mFNteZMSOxHnnVIMo3sbCcaVmW9wo&callback=initMap&libraries=&v=weekly"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-container">
+        <div class="nav-logo-container">
+          <img src="./img/logo.svg" alt="logo" />
+        </div>
+        <!-- extra dev is for animate ul inside-->
+        <div class="nav-ul-container">
+          <ul>
+            <li><a href="#section-main-anchor">O nas</a></li>
+            <li><a href="#section-offer-anchor">Oferta</a></li>
+            <li><a href="#section-wind-anchor">Green energy</a></li>
+            <li><a href="#section-whyus-anchor">Dlaczego my?</a></li>
+            <li><a href="#section-service-anchor">Serwis</a></li>
+            <li><a href="#section-contact-anchor">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="nav-burger">
+          <div class="nav-burger-line1"></div>
+          <div class="nav-burger-line2"></div>
+          <div class="nav-burger-line3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section-main" id="section-main">
+        <div class="anchor" id="section-main-anchor"></div>
+        <img
+          class="main-bg"
+          src="./img/power-lines-4123243.png"
+          alt="background"
+        />
+        <div class="main-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
+          facere!
+        </div>
+        <div class="main-form">
+          <form>
+            <h3>Szybki kontakt</h3>
+            <label for="quick-contact-name">Imię i nazwisko</label>
+            <input type="text" id="quick-contact-name" name="name" />
+            <label for="quick-contact-email">Email</label>
+            <input type="email" id="quick-contact-email" name="email" />
+            <label for="quick-contact-message">Wiadomość</label>
+            <textarea
+              name="message"
+              id="quick-contact-message"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <input type="submit" value="Wyślij" />
+          </form>
+        </div>
+        <div class="main-img">
+          <img src="./img/electrician1.png" alt="electrician" />
+        </div>
+      </section>
+      <section class="section-offer" id="section-offer">
+        <div class="anchor" id="section-offer-anchor"></div>
+        <div class="offer-card offer-card-1">
+          <h3>Proin aliquet</h3>
+          <p>
+            Proin aliquet justo id elit molestie ultrices. Ut porta sed odio
+            eget lobortis. Curabitur eget tortor aliquam, cursus lorem ut,
+            tincidunt leo.
+          </p>
+          <button>Click <i class="fas fa-arrow-alt-circle-right"></i></button>
+          <img src="./img/electric-4198293_1280.jpg" alt="electrician1" />
+        </div>
+        <div class="offer-card offer-card-2">
+          <h3>Suspendisse vitae</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            vitae justo non nibh consequat congue id sit amet leo. Nullam
+            aliquam ex ac lectus imperdiet, eget ullamcorper lectus malesuada.
+          </p>
+          <button>Click <i class="fas fa-arrow-alt-circle-right"></i></button>
+          <img src="./img/electric-948208_1280.jpg" alt="electrician2" />
+        </div>
+        <div class="offer-card offer-card-3">
+          <h3>Maecenas sed nunc</h3>
+          <p>
+            Nam quis ultrices nulla. Maecenas sed nunc vitae orci maximus
+            cursus. Nunc nec libero nisi. Duis blandit sit amet nisi id
+            ultricies.
+          </p>
+          <button>Click <i class="fas fa-arrow-alt-circle-right"></i></button>
+          <img src="./img/electrician-1080554_1280.jpg" alt="electrician3" />
+        </div>
+        <div class="offer-card offer-card-4">
+          <h3>Pellentesque consequat</h3>
+          <p>
+            In nec ante non tellus iaculis venenatis sed eu velit. Pellentesque
+            consequat orci vel magna volutpat eleifend. Maecenas et erat vel
+            sapien tristique finibus.
+          </p>
+          <button>Click <i class="fas fa-arrow-alt-circle-right"></i></button>
+          <img src="./img/hydro-lines-219926_1280.jpg" alt="electrician4" />
+        </div>
+        <div class="offer-card offer-card-5">
+          <h3>Pellentesque habitant</h3>
+          <p>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas.
+          </p>
+          <button>Click <i class="fas fa-arrow-alt-circle-right"></i></button>
+          <img src="./img/switchgear-2069758_1280.jpg" alt="electrician5" />
+        </div>
+        <div class="offer-card offer-card-6">
+          <h3>Nullam volutpat</h3>
+          <p>
+            Sed rhoncus aliquet augue vitae facilisis. Maecenas ac nisi at
+            turpis tristique convallis ac non ligula. Nullam volutpat, orci nec
+            euismod auctor, ligula quam facilisis velit, id consequat diam sem
+            sed tortor.
+          </p>
+          <button>Click <i class="fas fa-arrow-alt-circle-right"></i></button>
+          <img src="./img/wire-1098059_1280.jpg" alt="electrician6" />
+        </div>
+      </section>
+      <section class="section-wind" id="section-wind">
+        <div class="anchor" id="section-wind-anchor"></div>
+        <img
+          class="wind-bg"
+          src="img/wind-turbines-4723817.png"
+          alt="wind-turbines"
+        />
+        <div class="wind-1">
+          <h2>Renewable enegry</h2>
+          <p>
+            Nullam volutpat, orci nec euismod auctor, ligula quam facilisis
+            velit, id consequat diam sem sed tortor. Sed rhoncus aliquet augue
+            vitae facilisis. Maecenas ac nisi at turpis tristique convallis ac
+            non ligula. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas.
+          </p>
+        </div>
+        <div class="wind-2">
+          <h3>Maecenas et erat vel sapien tristique finibus.</h3>
+          <p>
+            Sed rhoncus aliquet augue vitae facilisis. Maecenas ac nisi at
+            turpis tristique convallis ac non ligula. Nullam volutpat, orci nec
+            euismod auctor, ligula quam facilisis velit, id consequat diam sem
+            sed tortor.
+          </p>
+          <ul>
+            <li>Maecenas ac nisi at turpis</li>
+            <li>Curabitur eget tortor aliquam</li>
+            <li>Cursus lorem ut, tincidunt leo</li>
+          </ul>
+        </div>
+        <div class="wind-img">
+          <img src="img/renewable-1989416_1280.jpg" alt="renewable" />
+        </div>
+      </section>
+      <section class="section-attached-image" id="section-attached-image">
+        <img src="img/tool-2766835_1920.jpg" alt="tools" />
+      </section>
+      <section class="section-whyus" id="section-whyus">
+        <div class="anchor" id="section-whyus-anchor"></div>
+        <img
+          class="whyus-bg"
+          src="./img/electric-lines-293964.png"
+          alt="whyus-bg"
+        />
+        <div class="whyus-text">
+          <h2>Dlaczego my?</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est labore
+            quia iure libero. Voluptate a nihil suscipit doloremque sint eaque.
+          </p>
+        </div>
+        <div class="whyus-card whyus-card-1">
+          <img src="./img/phone-5300447_1280.jpg" alt="phone" />
+          <p class="whyus-card-icon">
+            <i class="fas fa-phone"></i>
+          </p>
+          <h2>Nullam libero</h2>
+          <p class="whyus-card-text">
+            Fusce gravida neque eget nisi pretium, sodales pulvinar nulla
+            lacinia. Vivamus bibendum eros sit amet augue commodo elementum.
+          </p>
+        </div>
+        <div class="whyus-card whyus-card-2">
+          <img src="./img/technology-2147368_1280.jpg" alt="technology" />
+          <p class="whyus-card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </p>
+          <h2>Vivamus rhoncus</h2>
+          <p class="whyus-card-text">
+            Morbi et sagittis eros. Sed vel viverra ex. Vivamus id suscipit
+            nunc, quis vehicula metus. Vivamus rhoncus ultricies gravida.
+          </p>
+        </div>
+        <div class="whyus-card whyus-card-3">
+          <img src="./img/credit-card-1520400_1280.jpg" alt="credit-card" />
+          <p class="whyus-card-icon">
+            <i class="fas fa-credit-card"></i>
+          </p>
+          <h2>Voluptate a nihil</h2>
+          <p class="whyus-card-text">
+            In ac lorem in turpis maximus iaculis id ac ex. Nullam libero risus,
+            iaculis ut nibh vitae, blandit faucibus turpis.
+          </p>
+        </div>
+      </section>
+      <section class="section-service" id="section-service">
+        <div class="anchor" id="section-service-anchor"></div>
+        <img
+          class="service-bg"
+          src="img/power-towers-5807194.png"
+          alt="power-towers"
+        />
+        <div class="service-card service-card-1">
+          <p class="service-icon"><i class="fas fa-bolt"></i></p>
+          <h4 class="service-label">Lightning protection</h4>
+          <p class="service-text">
+            Ut eget mi mollis, cursus augue id, consequat ante. Praesent posuere
+            nec elit ut molestie. Donec congue pulvinar elit et fringilla.
+          </p>
+        </div>
+        <div class="service-card service-card-2">
+          <p class="service-icon"><i class="fas fa-car-battery"></i></p>
+          <h4 class="service-label">Backup generators</h4>
+          <p class="service-text">
+            Ut eget mi mollis, cursus augue id, consequat ante. Praesent posuere
+            nec elit ut molestie. Donec congue pulvinar elit et fringilla.
+          </p>
+        </div>
+        <div class="service-card service-card-3">
+          <p class="service-icon"><i class="fas fa-charging-station"></i></p>
+          <h4 class="service-label">Charging systems</h4>
+          <p class="service-text">
+            Donec congue dui at orci laoreet, eget condimentum felis mollis.
+            Vivamus pulvinar ex libero, quis viverra purus bibendum aliquam.
+          </p>
+        </div>
+        <div class="service-card service-card-4">
+          <p class="service-icon"><i class="far fa-lightbulb"></i></p>
+          <h4 class="service-label">Light systems</h4>
+          <p class="service-text">
+            Donec non ullamcorper tortor, eu pretium erat. Duis pretium interdum
+            nisl, sit amet porttitor purus maximus et. Nullam consectetur lorem
+            a fringilla tincidunt.
+          </p>
+        </div>
+        <div class="service-card service-card-5">
+          <p class="service-icon"><i class="fas fa-tools"></i></p>
+          <h4 class="service-label">Wiring modifications</h4>
+          <p class="service-text">
+            Donec tristique faucibus commodo. Sed suscipit, mauris non interdum
+            vestibulum, velit arcu accumsan quam, sit amet ornare lorem nibh
+            vitae leo.
+          </p>
+        </div>
+        <div class="service-card service-card-6">
+          <p class="service-icon"><i class="fas fa-plug"></i></p>
+          <h4 class="service-label">Connectors</h4>
+          <p class="service-text">
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Curabitur posuere in tellus cursus sodales.
+          </p>
+        </div>
+      </section>
+      <section class="section-contact" id="section-contact">
+        <div class="anchor" id="section-contact-anchor"></div>
+        <h2 class="contact-label text-shadow">Kontakt</h2>
+        <div class="contact-info-container">
+          <h3>COMPANY NAME</h3>
+          <p>
+            ul. Jakakolwiek 123<br />
+            55-555 Gdziekolwiek<br />
+            tel. +48 32 123 1212<br />
+            kom. +48 123 123 123<br />
+            email: contact@companyname.pl<br />
+          </p>
+          <h4>Godzint otwarcia</h4>
+          <p>pn. - pt. 7:00 - 17:00</p>
+        </div>
+        <div class="contatct-map-container" id="contact-map"></div>
+        <div class="contatct-social-container">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              />
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bi bi-twitter"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+              />
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bi bi-youtube"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer><p>Demo website</p></footer>
+  </body>
+</html>
