@@ -1,3 +1,5 @@
+import AddStyleOnScroll from "./AddStyleOnScroll.js";
+
 /**
  * Global constants
  */
@@ -12,7 +14,8 @@ const _navListLinks = document.querySelectorAll(
 const _navListItems = document.querySelectorAll(
   "#nav-container .nav-ul-container ul li"
 );
-const _offerBrands = document.querySelector(".brands");
+
+const _wind_img_img = document.querySelector(".wind-img img");
 
 //remove transition at the end of transition
 // !prevents navList hopping on window resize
@@ -59,3 +62,17 @@ _navBurger.addEventListener("click", () => {
     }
   });
 });
+
+new AddStyleOnScroll(
+  ".wind-img img",
+  "animation: fade-in-slide-up-right 1.7s;"
+);
+new AddStyleOnScroll(".wind-2", "animation: fade-in-slide-up-left 1.7s;");
+new AddStyleOnScroll(".wind-1", "animation: fade-in-slide-up 1.7s;");
+// document.addEventListener("scroll", () => {
+//   const animStart =
+//     _wind_img_img.offsetTop - _wind_img_img.scrollHeight + window.innerHeight;
+//   console.log(animStart, window.scrollY);
+//   if (animStart <= window.scrollY)
+//     _wind_img_img.style = "animation: fade-in-slide-up-right 2s;";
+// });

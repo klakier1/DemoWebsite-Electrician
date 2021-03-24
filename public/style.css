@@ -216,6 +216,7 @@ header {
   font-weight: 600;
   color: #575757;
   line-height: 1.4;
+  animation: fade-in-slide-down 1s;
 }
 
 .main-img {
@@ -230,11 +231,13 @@ header {
   max-height: 300px;
   object-fit: contain;
   display: block;
+  animation: fade-in-slide-up 1s;
 }
 
 .main-form {
   grid-column: 1/2;
   grid-row: 3/4;
+  animation: fade-in-slide-up 1s;
 }
 
 .main-form form {
@@ -883,7 +886,7 @@ p.service-text {
   }
 
   .whyus-card-2 {
-    margin: 1rem 1.5rem 2rem 1rem;
+    margin: 1rem 1.5rem 2rem 1.5rem;
   }
 
   .whyus-card-3 {
@@ -1021,3 +1024,71 @@ footer p {
   font-size: 0.8rem;
 }
 /* #endregion FOOTER */
+
+/* #region Animations */
+@keyframes fade-in-slide-up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-slide-down {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-slide-down-left {
+  from {
+    transform: translate(-100px, -100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-slide-up-left {
+  from {
+    transform: translate(-100px, 100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-slide-down-right {
+  from {
+    transform: translate(100px, -100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-slide-up-right {
+  from {
+    transform: translate(100px, 100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* #endregion */
