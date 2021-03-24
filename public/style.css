@@ -995,7 +995,7 @@ p.service-text {
 }
 @media screen and (min-width: 992px) {
   .section-contact {
-    grid-template-columns: 1fr minmax(300px, 1fr) minmax(600px, 2fr) 1fr;
+    grid-template-columns: 1fr minmax(330px, 1fr) minmax(660px, 2fr) 1fr;
     grid-template-areas: ". contact-label contact-label" ". contact-info contact-map" ". contact-social contact-social";
   }
 }
